@@ -1,5 +1,7 @@
 import angular      from 'angular';
 import headerStyles from './HeaderStyles.scss';
+import headerView from './HeaderView.html';
+
 
 class controller {
   constructor() { 'ngInject';
@@ -8,7 +10,7 @@ class controller {
 }
 
 const Component = {
-  template:     require('./HeaderView.jade')(headerStyles),
+  template:     headerView(headerStyles),
   controllerAs: 'Header',
   controller
 };

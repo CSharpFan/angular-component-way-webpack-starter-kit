@@ -218,7 +218,7 @@ module.exports = (function makeWebpackConfig () {
      */
     config.plugins.push(
       new HtmlWebpackPlugin({
-        template: './src/index.jade',
+        template: './src/index.html',
         inject: 'body'
       }),
 
